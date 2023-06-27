@@ -1,6 +1,14 @@
 -- Additional Plugins
 lvim.plugins = {
   {
+    "j-hui/fidget.nvim",
+    version = 'legacy'
+  },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin"
+  },
+  {
     "mawkler/modicator.nvim",
     event = "ColorScheme",
   },
@@ -28,7 +36,7 @@ lvim.plugins = {
   "nvim-treesitter/nvim-treesitter-textobjects",
   "mfussenegger/nvim-jdtls",
   "opalmay/vim-smoothie",
-  "j-hui/fidget.nvim",
+  -- "j-hui/fidget.nvim",
   "windwp/nvim-ts-autotag",
   "kylechui/nvim-surround",
   "christianchiarulli/harpoon",
