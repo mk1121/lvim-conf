@@ -4,7 +4,7 @@ require("neoai").setup {
   ui = {
     output_popup_text = "NeoAI",
     input_popup_text = "Prompt",
-    width = 30, -- As percentage eg. 30%
+    width = 30,               -- As percentage eg. 30%
     output_popup_height = 80, -- As percentage eg. 80%
   },
   models = {
@@ -25,12 +25,14 @@ require("neoai").setup {
   prompts = {
     context_prompt = function(context)
       return "Hey, I'd like to provide some context for future "
-        .. "messages. Here is the code/text that I want to refer "
-        .. "to in our upcoming conversations:\n\n"
-        .. context
+          .. "messages. Here is the code/text that I want to refer "
+          .. "to in our upcoming conversations:\n\n"
+          .. context
     end,
   },
-  open_api_key_env = "OPENAI_API_KEY",
+  open_api_key = {
+    env = "OPENAI_API_KEY",
+  },
   shortcuts = {
     {
       key = "<leader>as",
