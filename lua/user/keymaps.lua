@@ -8,7 +8,7 @@ local keymap = vim.keymap.set
 
 keymap("n", "<C-Space>", "<cmd>WhichKey \\<space><cr>", opts)
 keymap("n", "<C-i>", "<C-i>", opts)
-
+keymap("n", "<C-l>", "<cmd>put =printf('console.log('' 🔔 %s 👉 %s 👉 %s:'', %s);', line('.'), expand('%:t'), expand('<cword>'), expand('<cword>'))<cr>", opts)
 -- Normal --
 -- Better window navigation
 keymap("n", "<m-h>", "<C-w>h", opts)

@@ -1,3 +1,4 @@
+local home = vim.fn.expand("$HOME")
 require("neoai").setup {
   -- Below are the default options, feel free to override what you would like changed
   ui = {
@@ -43,7 +44,7 @@ require("neoai").setup {
       strip_function = nil,
     },
     {
-      key = "<leader>ag",
+      key = "<C-g>",
       use_context = false,
       prompt = function()
         return [[
