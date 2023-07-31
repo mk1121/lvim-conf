@@ -1,6 +1,10 @@
 -- Additional Plugins
 lvim.plugins = {
   {
+    "iamcco/markdown-preview.nvim",
+    build = function() vim.fn["mkdp#util#install"]() end,
+  },
+  {
     "mawkler/modicator.nvim",
     event = "ColorScheme",
   },

@@ -15,6 +15,9 @@ require("typescript").setup {
     capabilities = capabilities,
     settings = {
       typescript = {
+        preferences = {
+          importModuleSpecifier = "relative"
+        },
         inlayHints = {
           includeInlayEnumMemberValueHints = true,
           includeInlayFunctionLikeReturnTypeHints = true,
